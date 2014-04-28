@@ -1,0 +1,35 @@
+<h1>Listing datos_usuarios</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombres</th>
+      <th>Apellidos</th>
+      <th>Direccion</th>
+      <th>Telefono</th>
+      <th>Ci</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @datos_usuarios.each do |datos_usuario| %>
+      <tr>
+        <td><%= datos_usuario.nombres %></td>
+        <td><%= datos_usuario.apellidos %></td>
+        <td><%= datos_usuario.direccion %></td>
+        <td><%= datos_usuario.telefono %></td>
+        <td><%= datos_usuario.ci %></td>
+        <td><%= link_to 'Show', datos_usuario %></td>
+        <td><%= link_to 'Edit', edit_datos_usuario_path(datos_usuario) %></td>
+        <td><%= link_to 'Destroy', datos_usuario, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Datos usuario', new_datos_usuario_path %>

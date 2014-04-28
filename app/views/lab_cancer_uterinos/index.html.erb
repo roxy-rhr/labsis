@@ -1,0 +1,35 @@
+<h1>Listing lab_cancer_uterinos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Paciente</th>
+      <th>Usuario</th>
+      <th>Fecha toma muestra cancer uterino</th>
+      <th>Fecha entrega</th>
+      <th>Hospital</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lab_cancer_uterinos.each do |lab_cancer_uterino| %>
+      <tr>
+        <td><%= lab_cancer_uterino.paciente %></td>
+        <td><%= lab_cancer_uterino.usuario %></td>
+        <td><%= lab_cancer_uterino.fecha_toma_muestra_cancer_uterino %></td>
+        <td><%= lab_cancer_uterino.fecha_entrega %></td>
+        <td><%= lab_cancer_uterino.hospital %></td>
+        <td><%= link_to 'Show', lab_cancer_uterino %></td>
+        <td><%= link_to 'Edit', edit_lab_cancer_uterino_path(lab_cancer_uterino) %></td>
+        <td><%= link_to 'Destroy', lab_cancer_uterino, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lab cancer uterino', new_lab_cancer_uterino_path %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  codigo: 1
+  nombre: MyString
+  stock: 1.5
+  fecha_registro: 2014-03-23 17:36:54
+  nombre_entregante: MyString
+  hospital_id: 
+
+two:
+  codigo: 1
+  nombre: MyString
+  stock: 1.5
+  fecha_registro: 2014-03-23 17:36:54
+  nombre_entregante: MyString
+  hospital_id: 

@@ -1,0 +1,55 @@
+<h1>Listing lab_anat_pats</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Paciente</th>
+      <th>Usuario</th>
+      <th>Fecha toma muestra pat</th>
+      <th>Servicio</th>
+      <th>Cama</th>
+      <th>Diagnostico clinico</th>
+      <th>Datos anatomicos</th>
+      <th>Lugar muestra</th>
+      <th>Diagnostico operatorio</th>
+      <th>Pieza quirurgica</th>
+      <th>Biopsia</th>
+      <th>Otros</th>
+      <th>Conservante</th>
+      <th>Fecha entrega</th>
+      <th>Hospital</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lab_anat_pats.each do |lab_anat_pat| %>
+      <tr>
+        <td><%= lab_anat_pat.paciente %></td>
+        <td><%= lab_anat_pat.usuario %></td>
+        <td><%= lab_anat_pat.fecha_toma_muestra_pat %></td>
+        <td><%= lab_anat_pat.servicio %></td>
+        <td><%= lab_anat_pat.cama %></td>
+        <td><%= lab_anat_pat.diagnostico_clinico %></td>
+        <td><%= lab_anat_pat.datos_anatomicos %></td>
+        <td><%= lab_anat_pat.lugar_muestra %></td>
+        <td><%= lab_anat_pat.diagnostico_operatorio %></td>
+        <td><%= lab_anat_pat.pieza_quirurgica %></td>
+        <td><%= lab_anat_pat.biopsia %></td>
+        <td><%= lab_anat_pat.otros %></td>
+        <td><%= lab_anat_pat.conservante %></td>
+        <td><%= lab_anat_pat.fecha_entrega %></td>
+        <td><%= lab_anat_pat.hospital %></td>
+        <td><%= link_to 'Show', lab_anat_pat %></td>
+        <td><%= link_to 'Edit', edit_lab_anat_pat_path(lab_anat_pat) %></td>
+        <td><%= link_to 'Destroy', lab_anat_pat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lab anat pat', new_lab_anat_pat_path %>

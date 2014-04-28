@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Paciente:</strong>
+  <%= @malarium.paciente %>
+</p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @malarium.usuario %>
+</p>
+
+<p>
+  <strong>Fecha toma muestra malaria:</strong>
+  <%= @malarium.fecha_toma_muestra_malaria %>
+</p>
+
+<p>
+  <strong>Fecha entrega:</strong>
+  <%= @malarium.fecha_entrega %>
+</p>
+
+<p>
+  <strong>Hospital:</strong>
+  <%= @malarium.hospital %>
+</p>
+
+<%= link_to 'Edit', edit_malarium_path(@malarium) %> |
+<%= link_to 'Back', malaria_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rol_id: 
+  nombre_usuario: MyString
+  clave: MyString
+  hospital_id: 
+  datos_usuario_id: 
+
+two:
+  rol_id: 
+  nombre_usuario: MyString
+  clave: MyString
+  hospital_id: 
+  datos_usuario_id: 

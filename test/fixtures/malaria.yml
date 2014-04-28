@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  paciente_id: 
+  usuario_id: 
+  fecha_toma_muestra_malaria: 2014-03-23 17:36:27
+  fecha_entrega: 2014-03-23 17:36:27
+  hospital_id: 
+
+two:
+  paciente_id: 
+  usuario_id: 
+  fecha_toma_muestra_malaria: 2014-03-23 17:36:27
+  fecha_entrega: 2014-03-23 17:36:27
+  hospital_id: 

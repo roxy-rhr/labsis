@@ -1,0 +1,15 @@
+<%= simple_form_for(@chaga) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :paciente %>
+    <%= f.association :usuario %>
+    <%= f.input :fecha_toma_muestra_chagas %>
+    <%= f.input :fecha_entrega %>
+    <%= f.association :hospital %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

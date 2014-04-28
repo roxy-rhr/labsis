@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Paciente:</strong>
+  <%= @lab_cancer_uterino.paciente %>
+</p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @lab_cancer_uterino.usuario %>
+</p>
+
+<p>
+  <strong>Fecha toma muestra cancer uterino:</strong>
+  <%= @lab_cancer_uterino.fecha_toma_muestra_cancer_uterino %>
+</p>
+
+<p>
+  <strong>Fecha entrega:</strong>
+  <%= @lab_cancer_uterino.fecha_entrega %>
+</p>
+
+<p>
+  <strong>Hospital:</strong>
+  <%= @lab_cancer_uterino.hospital %>
+</p>
+
+<%= link_to 'Edit', edit_lab_cancer_uterino_path(@lab_cancer_uterino) %> |
+<%= link_to 'Back', lab_cancer_uterinos_path %>

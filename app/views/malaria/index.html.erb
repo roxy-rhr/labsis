@@ -1,0 +1,35 @@
+<h1>Listing malaria</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Paciente</th>
+      <th>Usuario</th>
+      <th>Fecha toma muestra malaria</th>
+      <th>Fecha entrega</th>
+      <th>Hospital</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @malaria.each do |malarium| %>
+      <tr>
+        <td><%= malarium.paciente %></td>
+        <td><%= malarium.usuario %></td>
+        <td><%= malarium.fecha_toma_muestra_malaria %></td>
+        <td><%= malarium.fecha_entrega %></td>
+        <td><%= malarium.hospital %></td>
+        <td><%= link_to 'Show', malarium %></td>
+        <td><%= link_to 'Edit', edit_malarium_path(malarium) %></td>
+        <td><%= link_to 'Destroy', malarium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Malarium', new_malarium_path %>

@@ -1,0 +1,35 @@
+<h1>Listing chagas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Paciente</th>
+      <th>Usuario</th>
+      <th>Fecha toma muestra chagas</th>
+      <th>Fecha entrega</th>
+      <th>Hospital</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @chagas.each do |chaga| %>
+      <tr>
+        <td><%= chaga.paciente %></td>
+        <td><%= chaga.usuario %></td>
+        <td><%= chaga.fecha_toma_muestra_chagas %></td>
+        <td><%= chaga.fecha_entrega %></td>
+        <td><%= chaga.hospital %></td>
+        <td><%= link_to 'Show', chaga %></td>
+        <td><%= link_to 'Edit', edit_chaga_path(chaga) %></td>
+        <td><%= link_to 'Destroy', chaga, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Chaga', new_chaga_path %>

@@ -1,0 +1,25 @@
+<%= simple_form_for(@lab_anat_pat) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :paciente %>
+    <%= f.association :usuario %>
+    <%= f.input :fecha_toma_muestra_pat %>
+    <%= f.input :servicio %>
+    <%= f.input :cama %>
+    <%= f.input :diagnostico_clinico %>
+    <%= f.input :datos_anatomicos %>
+    <%= f.input :lugar_muestra %>
+    <%= f.input :diagnostico_operatorio %>
+    <%= f.input :pieza_quirurgica %>
+    <%= f.input :biopsia %>
+    <%= f.input :otros %>
+    <%= f.input :conservante %>
+    <%= f.input :fecha_entrega %>
+    <%= f.association :hospital %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

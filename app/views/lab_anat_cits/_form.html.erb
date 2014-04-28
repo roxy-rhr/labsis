@@ -1,0 +1,39 @@
+<%= simple_form_for(@lab_anat_cit) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :paciente %>
+    <%= f.association :usuario %>
+    <%= f.input :fecha_toma_muestra_cit %>
+    <%= f.input :fecha_ult_menstruacion %>
+    <%= f.input :fecha_ult_parto %>
+    <%= f.input :fecha_aborto %>
+    <%= f.input :nivel_social %>
+    <%= f.input :n_emabarazos %>
+    <%= f.input :nro %>
+    <%= f.input :sin_tratamiento %>
+    <%= f.input :n_abortos %>
+    <%= f.input :ritmo %>
+    <%= f.input :dia_termo %>
+    <%= f.input :n_cesareas %>
+    <%= f.input :estado_lactancia %>
+    <%= f.input :menopausia %>
+    <%= f.input :embarazo %>
+    <%= f.input :ligadura_trompas %>
+    <%= f.input :oral %>
+    <%= f.input :depo %>
+    <%= f.input :otros %>
+    <%= f.input :criocirug_hormonal %>
+    <%= f.input :aspecto_cuello %>
+    <%= f.input :flujo_vaginal %>
+    <%= f.input :lugar_de_muestra %>
+    <%= f.input :informacion_toma_muestra %>
+    <%= f.input :control %>
+    <%= f.input :fecha_entrega %>
+    <%= f.association :hospital %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

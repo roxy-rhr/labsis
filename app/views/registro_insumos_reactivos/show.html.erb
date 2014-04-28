@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Codigo:</strong>
+  <%= @registro_insumos_reactivo.codigo %>
+</p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @registro_insumos_reactivo.nombre %>
+</p>
+
+<p>
+  <strong>Stock:</strong>
+  <%= @registro_insumos_reactivo.stock %>
+</p>
+
+<p>
+  <strong>Fecha registro:</strong>
+  <%= @registro_insumos_reactivo.fecha_registro %>
+</p>
+
+<p>
+  <strong>Nombre entregante:</strong>
+  <%= @registro_insumos_reactivo.nombre_entregante %>
+</p>
+
+<p>
+  <strong>Hospital:</strong>
+  <%= @registro_insumos_reactivo.hospital %>
+</p>
+
+<%= link_to 'Edit', edit_registro_insumos_reactivo_path(@registro_insumos_reactivo) %> |
+<%= link_to 'Back', registro_insumos_reactivos_path %>

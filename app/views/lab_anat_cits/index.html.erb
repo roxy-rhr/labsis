@@ -1,0 +1,83 @@
+<h1>Listing lab_anat_cits</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Paciente</th>
+      <th>Usuario</th>
+      <th>Fecha toma muestra cit</th>
+      <th>Fecha ult menstruacion</th>
+      <th>Fecha ult parto</th>
+      <th>Fecha aborto</th>
+      <th>Nivel social</th>
+      <th>N emabarazos</th>
+      <th>Nro</th>
+      <th>Sin tratamiento</th>
+      <th>N abortos</th>
+      <th>Ritmo</th>
+      <th>Dia termo</th>
+      <th>N cesareas</th>
+      <th>Estado lactancia</th>
+      <th>Menopausia</th>
+      <th>Embarazo</th>
+      <th>Ligadura trompas</th>
+      <th>Oral</th>
+      <th>Depo</th>
+      <th>Otros</th>
+      <th>Criocirug hormonal</th>
+      <th>Aspecto cuello</th>
+      <th>Flujo vaginal</th>
+      <th>Lugar de muestra</th>
+      <th>Informacion toma muestra</th>
+      <th>Control</th>
+      <th>Fecha entrega</th>
+      <th>Hospital</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lab_anat_cits.each do |lab_anat_cit| %>
+      <tr>
+        <td><%= lab_anat_cit.paciente %></td>
+        <td><%= lab_anat_cit.usuario %></td>
+        <td><%= lab_anat_cit.fecha_toma_muestra_cit %></td>
+        <td><%= lab_anat_cit.fecha_ult_menstruacion %></td>
+        <td><%= lab_anat_cit.fecha_ult_parto %></td>
+        <td><%= lab_anat_cit.fecha_aborto %></td>
+        <td><%= lab_anat_cit.nivel_social %></td>
+        <td><%= lab_anat_cit.n_emabarazos %></td>
+        <td><%= lab_anat_cit.nro %></td>
+        <td><%= lab_anat_cit.sin_tratamiento %></td>
+        <td><%= lab_anat_cit.n_abortos %></td>
+        <td><%= lab_anat_cit.ritmo %></td>
+        <td><%= lab_anat_cit.dia_termo %></td>
+        <td><%= lab_anat_cit.n_cesareas %></td>
+        <td><%= lab_anat_cit.estado_lactancia %></td>
+        <td><%= lab_anat_cit.menopausia %></td>
+        <td><%= lab_anat_cit.embarazo %></td>
+        <td><%= lab_anat_cit.ligadura_trompas %></td>
+        <td><%= lab_anat_cit.oral %></td>
+        <td><%= lab_anat_cit.depo %></td>
+        <td><%= lab_anat_cit.otros %></td>
+        <td><%= lab_anat_cit.criocirug_hormonal %></td>
+        <td><%= lab_anat_cit.aspecto_cuello %></td>
+        <td><%= lab_anat_cit.flujo_vaginal %></td>
+        <td><%= lab_anat_cit.lugar_de_muestra %></td>
+        <td><%= lab_anat_cit.informacion_toma_muestra %></td>
+        <td><%= lab_anat_cit.control %></td>
+        <td><%= lab_anat_cit.fecha_entrega %></td>
+        <td><%= lab_anat_cit.hospital %></td>
+        <td><%= link_to 'Show', lab_anat_cit %></td>
+        <td><%= link_to 'Edit', edit_lab_anat_cit_path(lab_anat_cit) %></td>
+        <td><%= link_to 'Destroy', lab_anat_cit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lab anat cit', new_lab_anat_cit_path %>

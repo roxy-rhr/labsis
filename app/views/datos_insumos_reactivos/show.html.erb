@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @datos_insumos_reactivo.usuario %>
+</p>
+
+<p>
+  <strong>Codigo:</strong>
+  <%= @datos_insumos_reactivo.codigo %>
+</p>
+
+<p>
+  <strong>Stock:</strong>
+  <%= @datos_insumos_reactivo.stock %>
+</p>
+
+<p>
+  <strong>Fecha registro:</strong>
+  <%= @datos_insumos_reactivo.fecha_registro %>
+</p>
+
+<p>
+  <strong>Hospital:</strong>
+  <%= @datos_insumos_reactivo.hospital %>
+</p>
+
+<%= link_to 'Edit', edit_datos_insumos_reactivo_path(@datos_insumos_reactivo) %> |
+<%= link_to 'Back', datos_insumos_reactivos_path %>

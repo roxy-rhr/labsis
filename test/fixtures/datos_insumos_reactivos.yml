@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  usuario_id: 
+  codigo: 1
+  stock: 1.5
+  fecha_registro: 2014-03-23 17:37:02
+  hospital_id: 
+
+two:
+  usuario_id: 
+  codigo: 1
+  stock: 1.5
+  fecha_registro: 2014-03-23 17:37:02
+  hospital_id: 

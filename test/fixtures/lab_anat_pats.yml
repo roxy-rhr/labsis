@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  paciente_id: 
+  usuario_id: 
+  fecha_toma_muestra_pat: 2014-03-23 17:36:02
+  servicio: MyString
+  cama: MyString
+  diagnostico_clinico: MyText
+  datos_anatomicos: MyText
+  lugar_muestra: MyString
+  diagnostico_operatorio: MyText
+  pieza_quirurgica: MyString
+  biopsia: MyString
+  otros: MyString
+  conservante: MyString
+  fecha_entrega: 2014-03-23
+  hospital_id: 
+
+two:
+  paciente_id: 
+  usuario_id: 
+  fecha_toma_muestra_pat: 2014-03-23 17:36:02
+  servicio: MyString
+  cama: MyString
+  diagnostico_clinico: MyText
+  datos_anatomicos: MyText
+  lugar_muestra: MyString
+  diagnostico_operatorio: MyText
+  pieza_quirurgica: MyString
+  biopsia: MyString
+  otros: MyString
+  conservante: MyString
+  fecha_entrega: 2014-03-23
+  hospital_id: 

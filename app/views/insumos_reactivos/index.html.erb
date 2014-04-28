@@ -1,0 +1,39 @@
+<h1>Listing insumos_reactivos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Codigo</th>
+      <th>Stock</th>
+      <th>Nombre lab</th>
+      <th>Detalle</th>
+      <th>Tipo</th>
+      <th>Hospital</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @insumos_reactivos.each do |insumos_reactivo| %>
+      <tr>
+        <td><%= insumos_reactivo.nombre %></td>
+        <td><%= insumos_reactivo.codigo %></td>
+        <td><%= insumos_reactivo.stock %></td>
+        <td><%= insumos_reactivo.nombre_lab %></td>
+        <td><%= insumos_reactivo.detalle %></td>
+        <td><%= insumos_reactivo.tipo %></td>
+        <td><%= insumos_reactivo.hospital %></td>
+        <td><%= link_to 'Show', insumos_reactivo %></td>
+        <td><%= link_to 'Edit', edit_insumos_reactivo_path(insumos_reactivo) %></td>
+        <td><%= link_to 'Destroy', insumos_reactivo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Insumos reactivo', new_insumos_reactivo_path %>

@@ -1,0 +1,35 @@
+<h1>Listing lab_tuberculoses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Paciente</th>
+      <th>Usuario</th>
+      <th>Fecha toma muestra tuberculosis</th>
+      <th>Fecha entrega</th>
+      <th>Hospital</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lab_tuberculoses.each do |lab_tuberculose| %>
+      <tr>
+        <td><%= lab_tuberculose.paciente %></td>
+        <td><%= lab_tuberculose.usuario %></td>
+        <td><%= lab_tuberculose.fecha_toma_muestra_tuberculosis %></td>
+        <td><%= lab_tuberculose.fecha_entrega %></td>
+        <td><%= lab_tuberculose.hospital %></td>
+        <td><%= link_to 'Show', lab_tuberculose %></td>
+        <td><%= link_to 'Edit', edit_lab_tuberculose_path(lab_tuberculose) %></td>
+        <td><%= link_to 'Destroy', lab_tuberculose, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lab tuberculosis', new_lab_tuberculose_path %>

@@ -1,0 +1,72 @@
+#instalar la gema rails
+gem install rails
+#    creacion d eproyecto
+rails new labsis -d postgresql
+cd labsis
+#rubymine configuracion
+conf--> database.yml -->adapter: postgresql
+                          encoding: unicode
+                          database: labsis_test
+                          pool: 5
+                          username: postgres // cambiar a postgres
+                          password:  root   // contraseña de posgres al installer
+                          host: localhost  //aumentar esto
+# cd labsis\\para entrar a mi proyecto
+#bundle //en cmd para actualizar  todas las gemas de ruby
+#crear bd-->tools-->run rake task--> db:create
+#para plantillas twitter bootsttrap
+#agregar a Gemfile    es para crear formularios simples
+gem 'simple_form'
+
+#instalacion de simple form  en la direccion de proyecto
+rails g simple_form:install en cmd
+#
+rails generate simple_form:install --bootstrap
+ #en gemfile
+gem 'twitter-bootstrap-rails'
+#instalar en cmd con... bundle
+#agregar en app-- javascrips-- aplications
+/= require jquery
+//= require jquery_ujs
+//= require twitter/bootstrap
+#parausar css
+rails generate bootstrap:install static
+ #paracambiar de idioma deshabilitar en aplication
+   config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
+     config.i18n.default_locale = :es
+copiar los archivos de locales--> de .en y cambiar a .es y traducir
+·#  para activar el  brooasttrap debo configurar en config rout a donde voy a dirigir
+#para cambiar de version de ruby para trabajar con mi proyecto o de la doctorita
+entrar a sistema--conf avanzadas--variables de entorno
+;C:\RailsInstaller\Ruby2.0.0\bin
+rails s -p y numero del puerto para q corran 2 al mismo tiempo
+#myadmin hacer correr con el puerto/myadmin y crear una nueva bd y migrar desde mysql mi base de datos ladoratio_des
+
+#creacion de tablas
+rails g scaffold usuario rol:references nombre_usuario:string clave:string hospital:references datos_usuario:references
+rails g scaffold rol nombre:string
+rails g scaffold datos_usuario nombres:string apellidos:string direccion:string telefono:integer ci:integer
+
+rails g scaffold paciente nombres:string apellidos:string fecha_nacimiento:date edad:integer sexo:string direccion:string ciudad:string telefono:integer
+rails g scaffold hospital nombre:string sigla:string provincia:string ciudad:string direccion:string logo:string categoria:string
+rails g scaffold lab_anat_cit paciente:references usuario:references fecha_toma_muestra_cit:datetime fecha_ult_menstruacion:date fecha_ult_parto:date fecha_aborto:date nivel_social:integer n_emabarazos:integer nro:integer sin_tratamiento:string n_abortos:integer ritmo:string dia_termo:date n_cesareas:integer estado_lactancia:boolean menopausia:boolean embarazo:boolean ligadura_trompas:boolean oral:boolean depo:boolean otros:text criocirug_hormonal:text aspecto_cuello:string flujo_vaginal:string lugar_de_muestra:string informacion_toma_muestra:text control:boolean fecha_entrega:datetime hospital:references
+rails g scaffold lab_anat_pat paciente:references usuario:references fecha_toma_muestra_pat:datetime servicio:string cama:string diagnostico_clinico:text datos_anatomicos:text lugar_muestra:string diagnostico_operatorio:text pieza_quirurgica:string biopsia:string otros:string conservante:string fecha_entrega:date hospital:references
+rails g scaffold lab_tuberculosis paciente:references usuario:references fecha_toma_muestra_tuberculosis:datetime fecha_entrega:datetime hospital:references
+rails g scaffold chagas paciente:references usuario:references fecha_toma_muestra_chagas:datetime fecha_entrega:datetime hospital:references
+rails g scaffold malaria paciente:references usuario:references fecha_toma_muestra_malaria:datetime fecha_entrega:datetime hospital:references
+rails g scaffold lab_cancer_uterino paciente:references usuario:references fecha_toma_muestra_cancer_uterino:datetime fecha_entrega:datetime hospital:references
+rails g scaffold insumos_reactivos nombre:string codigo:integer stock:float nombre_lab:string detalle:text tipo:string hospital:references
+rails g scaffold registro_insumos_reactivos codigo:integer nombre:string stock:float fecha_registro:datetime nombre_entregante:string hospital:references
+rails g scaffold datos_insumos_reactivos usuario:references codigo:integer stock:float fecha_registro:datetime hospital:references
+
+cuenta en gihubs username= roxan-rhr correo=roxan@gmail contraseña roxan123
+
+
+rails g bootstrap:layout application fluid
+getbootstrap.com
+
+#CRearuna vista para patologia  en consola
+ rails g controller principal_patologia index
+
+# eliminar una tabla vista su controlador etc
+rail destroy scaffold

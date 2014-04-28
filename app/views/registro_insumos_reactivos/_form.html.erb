@@ -1,0 +1,16 @@
+<%= simple_form_for(@registro_insumos_reactivo) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :codigo %>
+    <%= f.input :nombre %>
+    <%= f.input :stock %>
+    <%= f.input :fecha_registro %>
+    <%= f.input :nombre_entregante %>
+    <%= f.association :hospital %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

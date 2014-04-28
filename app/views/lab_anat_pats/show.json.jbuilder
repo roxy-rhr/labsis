@@ -1,0 +1,1 @@
+json.extract! @lab_anat_pat, :id, :paciente_id, :usuario_id, :fecha_toma_muestra_pat, :servicio, :cama, :diagnostico_clinico, :datos_anatomicos, :lugar_muestra, :diagnostico_operatorio, :pieza_quirurgica, :biopsia, :otros, :conservante, :fecha_entrega, :hospital_id, :created_at, :updated_at

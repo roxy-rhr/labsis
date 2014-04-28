@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Paciente:</strong>
+  <%= @chaga.paciente %>
+</p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @chaga.usuario %>
+</p>
+
+<p>
+  <strong>Fecha toma muestra chagas:</strong>
+  <%= @chaga.fecha_toma_muestra_chagas %>
+</p>
+
+<p>
+  <strong>Fecha entrega:</strong>
+  <%= @chaga.fecha_entrega %>
+</p>
+
+<p>
+  <strong>Hospital:</strong>
+  <%= @chaga.hospital %>
+</p>
+
+<%= link_to 'Edit', edit_chaga_path(@chaga) %> |
+<%= link_to 'Back', chagas_path %>

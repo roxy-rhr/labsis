@@ -1,0 +1,2 @@
+module PrincipalPatologiaHelper
+end

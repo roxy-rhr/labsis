@@ -1,0 +1,37 @@
+<h1>Listing registro_insumos_reactivos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Codigo</th>
+      <th>Nombre</th>
+      <th>Stock</th>
+      <th>Fecha registro</th>
+      <th>Nombre entregante</th>
+      <th>Hospital</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @registro_insumos_reactivos.each do |registro_insumos_reactivo| %>
+      <tr>
+        <td><%= registro_insumos_reactivo.codigo %></td>
+        <td><%= registro_insumos_reactivo.nombre %></td>
+        <td><%= registro_insumos_reactivo.stock %></td>
+        <td><%= registro_insumos_reactivo.fecha_registro %></td>
+        <td><%= registro_insumos_reactivo.nombre_entregante %></td>
+        <td><%= registro_insumos_reactivo.hospital %></td>
+        <td><%= link_to 'Show', registro_insumos_reactivo %></td>
+        <td><%= link_to 'Edit', edit_registro_insumos_reactivo_path(registro_insumos_reactivo) %></td>
+        <td><%= link_to 'Destroy', registro_insumos_reactivo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Registro insumos reactivo', new_registro_insumos_reactivo_path %>

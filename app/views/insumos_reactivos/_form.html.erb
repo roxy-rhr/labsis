@@ -1,0 +1,17 @@
+<%= simple_form_for(@insumos_reactivo) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :nombre %>
+    <%= f.input :codigo %>
+    <%= f.input :stock %>
+    <%= f.input :nombre_lab %>
+    <%= f.input :detalle %>
+    <%= f.input :tipo %>
+    <%= f.association :hospital %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Paciente:</strong>
+  <%= @lab_tuberculose.paciente %>
+</p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @lab_tuberculose.usuario %>
+</p>
+
+<p>
+  <strong>Fecha toma muestra tuberculosis:</strong>
+  <%= @lab_tuberculose.fecha_toma_muestra_tuberculosis %>
+</p>
+
+<p>
+  <strong>Fecha entrega:</strong>
+  <%= @lab_tuberculose.fecha_entrega %>
+</p>
+
+<p>
+  <strong>Hospital:</strong>
+  <%= @lab_tuberculose.hospital %>
+</p>
+
+<%= link_to 'Edit', edit_lab_tuberculose_path(@lab_tuberculose) %> |
+<%= link_to 'Back', lab_tuberculoses_path %>
