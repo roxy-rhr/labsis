@@ -5,7 +5,6 @@ class PacientesController < ApplicationController
   # GET /pacientes.json
   def index
     @pacientes = Paciente.all
-    @pacientes = Paciente.where(:laboratorio =>"citologico")
   end
 
   # GET /pacientes/1
